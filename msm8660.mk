@@ -64,14 +64,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8660
 
-# Omx
+# QCOM OMX
 PRODUCT_PACKAGES += \
-    libdivxdrmdecrypt \
-    libmm-omxcore \
-    libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
+     libstagefrighthw \
+     libOmxCore \
+     libmm-omxcore \
+     libdivxdrmdecrypt \
+     libOmxVenc \
+     libOmxVdec \
+     mm-vdec-omx-test \
+     mm-video-driver-test \
+     mm-venc-omx-test720p \
+     mm-video-encdrv-test
 
 # Misc
 PRODUCT_PACKAGES += \
