@@ -38,15 +38,19 @@ TARGET_SCORPION_BIONIC_PLDSIZE := 128
 BOARD_WPA_SUPPLICANT_DRIVER      := WEXT
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_wext
+BOARD_HOSTAPD_DRIVER             := WEXT
+BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_wext
 BOARD_WLAN_DEVICE                := bcm4329
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcm4329/parameters/firmware_path"
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcm4329.ko"
-WIFI_DRIVER_FW_PATH_STA          := "/vendor/firmware/fw_bcm4329.bin"
-WIFI_DRIVER_FW_PATH_AP           := "/vendor/firmware/fw_bcm4329_apsta.bin"
+WIFI_DRIVER_FW_PATH_STA          := "/system/etc/firmware/fw_bcm4329.bin"
+WIFI_DRIVER_FW_PATH_AP           := "/system/etc/firmware/fw_bcm4329_apsta.bin"
+WIFI_DRIVER_FW_STA_PATH          := "/system/etc/firmware/fw_bcm4329.bin"
+WIFI_DRIVER_FW_AP_PATH           := "/system/etc/firmware/fw_bcm4329_apsta.bin"
+WIFI_DRIVER_MODULE_ARG           := "firmware_path=/system/etc/firmware/fw_bcm4329.bin nvram_path=/proc/calibration iface_name=wlan"
 WIFI_DRIVER_MODULE_NAME          := "bcm4329"
-WIFI_DRIVER_MODULE_ARG           := "firmware_path=/vendor/firmware/fw_bcm4329.bin nvram_path=/proc/calibration iface_name=wlan"
 BOARD_WLAN_DEVICE_REV            := bcm4329
-WIFI_BAND                        := 802_11_ABG
+WIFI_BAND                        := 802_11_ABGN
 ARD_NEEDS_CUTILS_LOG := true
 
 BOARD_USES_QCOM_HARDWARE := true
@@ -56,6 +60,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
 
+BOARD_USES_ADRENO_200 := true
 BOARD_USES_QCOM_LIBS := true
 BOARD_USES_QCOM_LIBRPC := true
 BOARD_USES_QCOM_GPS := true
@@ -64,14 +69,17 @@ BOARD_USE_QCOM_PMEM := true
 COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE
 USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION := true
+TARGET_USES_SF_BYPASS := true
 TARGET_HAVE_BYPASS := true
 TARGET_USES_OVERLAY := true
-TARGET_QCOM_HDMI_OUT := true
+TARGET_USES_GENLOCK := true
+TARGET_GRALLOC_USES_ASHMEM := true
 
-#BOARD_HAVE_FM_RADIO := true
-#BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
+# BOARD_HAVE_FM_RADIO := true
+# BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 
 # webkit
+# ARCH_ARM_HAVE_VFP := true
 TARGET_FORCE_CPU_UPLOAD := true
 DYNAMIC_SHARED_LIBV8SO := true
 
