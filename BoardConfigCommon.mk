@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
--include device/htc/msm8660-common/BoardConfigCommon.mk
+# inherit from common msm8660 Recovery
+-include device/htc/8660-recovery/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8660-common/include
 
