@@ -85,14 +85,16 @@ endif
 
 # 8660 Common Firmware
 PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
-    device/htc/msm8660-common/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    device/htc/msm8660-common/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    device/htc/msm8660-common/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw
+    device/htc/msm8660-common/prebuilt/system/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
+    device/htc/msm8660-common/prebuilt/system/etc/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin \
+    device/htc/msm8660-common/prebuilt/system/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin
+    device/htc/msm8660-common/prebuilt/system/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
+    device/htc/msm8660-common/prebuilt/system/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    device/htc/msm8660-common/prebuilt/system/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw
 
 # usb profiles
 PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/init.htc8660.usb.rc:root/init.htc8660.usb.rc
+    device/htc/msm8660-common/init.msm8660.usb.rc:root/init.msm8660.usb.rc
 
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
