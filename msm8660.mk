@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
 
 # egl config file
 PRODUCT_COPY_FILES += \
-    device/htc/8660-common/prebuilt/etc/egl.cfg:system/etc/egl.cfg
+    device/htc/8660-common/prebuilt/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 # media config xml file
 PRODUCT_COPY_FILES += \
@@ -105,4 +105,4 @@ PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/prebuilt/init.post_boot.sh:system/etc/init.post_boot.sh
+    device/htc/msm8660-common/prebuilt/etc/init.post_boot.sh:system/etc/init.post_boot.sh

@@ -59,7 +59,7 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
-BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
+BOARD_EGL_CFG := device/htc/msm8660-common/prebuilt/lib/egl/egl.cfg
 
 BOARD_USES_ADRENO_200 := true
 BOARD_USES_QCOM_LIBS := true
