@@ -30,6 +30,8 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml
 
+DEVICE_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
+
 # QCOM Display
 PRODUCT_PACKAGES += \
     copybit.msm8660 \
