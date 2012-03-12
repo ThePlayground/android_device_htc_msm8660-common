@@ -14,7 +14,7 @@
 
 # usb profiles
 PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/init.msm8660.usb.rc:root/init.msm8660.usb.rc
+    device/htc/msm8660-common/prebuilt/init.msm8660.usb.rc:root/init.msm8660.usb.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
