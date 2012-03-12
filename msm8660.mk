@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += \
 
 # egl config file
 PRODUCT_COPY_FILES += \
-    device/htc/8660-common/prebuilt/lib/egl/egl.cfg:system/lib/egl/egl.cfg
+    device/htc/msm8660-common/prebuilt/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 # media config xml file
 PRODUCT_COPY_FILES += \
