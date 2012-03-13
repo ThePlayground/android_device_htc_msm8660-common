@@ -35,7 +35,7 @@ PRODUCT_COPY_FILES += \
 
 # bootanimation
 PRODUCT_COPY_FILES += \
-    device/htc/msm7x30-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+    device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
 
