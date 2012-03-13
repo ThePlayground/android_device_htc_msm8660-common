@@ -33,6 +33,10 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml
 
+# bootanimation
+PRODUCT_COPY_FILES += \
+    device/htc/msm7x30-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+
 DEVICE_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
 
 # QCOM Display
