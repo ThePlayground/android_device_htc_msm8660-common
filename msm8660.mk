@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit msm7x30 Vendor Files
+$(call inherit-product-if-exists, vendor/twisted/twisted-vendor.mk)
+$(call inherit-product-if-exists, vendor/twisted/google-vendor.mk)
+$(call inherit-product-if-exists, vendor/qcom/qcom-vendor-blobs.mk)
+
 # usb profiles
 PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/init.msm8660.usb.rc:root/init.msm8660.usb.rc
@@ -87,9 +92,7 @@ PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
     device/htc/msm8660-common/prebuilt/etc/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin \
     device/htc/msm8660-common/prebuilt/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
-    device/htc/msm8660-common/prebuilt/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    device/htc/msm8660-common/prebuilt/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-    device/htc/msm8660-common/prebuilt/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw
+    device/htc/msm8660-common/prebuilt/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
 
 # egl config file
 PRODUCT_COPY_FILES += \
