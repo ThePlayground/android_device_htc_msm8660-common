@@ -48,7 +48,6 @@ WIFI_DRIVER_FW_PATH_STA          := "/system/etc/firmware/fw_bcm4329.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/system/etc/firmware/fw_bcm4329_apsta.bin"
 WIFI_DRIVER_FW_STA_PATH          := "/system/etc/firmware/fw_bcm4329.bin"
 WIFI_DRIVER_FW_AP_PATH           := "/system/etc/firmware/fw_bcm4329_apsta.bin"
-WIFI_DRIVER_MODULE_ARG           := "firmware_path=/system/etc/firmware/fw_bcm4329.bin nvram_path=/proc/calibration iface_name=wlan"
 WIFI_DRIVER_MODULE_NAME          := "bcm4329"
 BOARD_WLAN_DEVICE_REV            := bcm4329
 WIFI_BAND                        := 802_11_ABGN
@@ -79,12 +78,6 @@ TARGET_HAVE_BYPASS := true
 TARGET_USES_OVERLAY := true
 TARGET_USES_GENLOCK := true
 TARGET_GRALLOC_USES_ASHMEM := true
-
-# Additional Flags
-# TARGET_QCOM_HDMI_OUT := true
-# ARCH_ARM_HAVE_VFP := true
-# BOARD_HAVE_FM_RADIO := true
-# BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 
 TARGET_FORCE_CPU_UPLOAD := true
 DYNAMIC_SHARED_LIBV8SO := true
