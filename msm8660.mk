@@ -13,8 +13,6 @@
 # limitations under the License.
 
 # Inherit msm8660 Vendor Files
-$(call inherit-product-if-exists, vendor/twisted/twisted-vendor.mk)
-$(call inherit-product-if-exists, vendor/twisted/google-vendor.mk)
 $(call inherit-product-if-exists, vendor/qcom/qcom-vendor-blobs.mk)
 
 # usb profiles
@@ -43,7 +41,6 @@ PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 
 # QCOM Display
 PRODUCT_PACKAGES += \
