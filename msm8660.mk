@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit msm7x30 Vendor Files
+# Inherit msm8660 Vendor Files
 $(call inherit-product-if-exists, vendor/twisted/twisted-vendor.mk)
 $(call inherit-product-if-exists, vendor/twisted/google-vendor.mk)
 $(call inherit-product-if-exists, vendor/qcom/qcom-vendor-blobs.mk)
@@ -42,7 +42,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
-DEVICE_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
+PRODUCT_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 
 # QCOM Display
 PRODUCT_PACKAGES += \
@@ -93,10 +94,6 @@ PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/etc/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin \
     device/htc/msm8660-common/prebuilt/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
     device/htc/msm8660-common/prebuilt/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw
-
-# egl config file
-PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/prebuilt/lib/egl/egl.cfg:system/lib/egl/egl.cfg
 
 # media config xml file
 PRODUCT_COPY_FILES += \
