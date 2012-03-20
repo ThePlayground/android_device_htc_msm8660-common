@@ -70,7 +70,7 @@ BOARD_USES_QCOM_GPS := true
 BOARD_USE_QCOM_PMEM := true
 BOARD_EGL_GRALLOC_USAGE_FILTER := true
 
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 
 COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60 -DQCOM_HARDWARE
 USE_OPENGL_RENDERER := true
