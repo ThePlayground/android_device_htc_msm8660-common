@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8660 \
     libaudioutils
 
+# QCOM Camera
+PRODUCT_PACKAGES += \
+    camera.msm8660
+
 # Omx
 PRODUCT_PACKAGES += \
     libdivxdrmdecrypt \
