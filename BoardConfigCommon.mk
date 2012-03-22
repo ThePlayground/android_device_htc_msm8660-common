@@ -61,6 +61,8 @@ BOARD_USES_QCOM_AUDIO_SPEECH := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+TARGET_DZO_CAMERA := true
+
 BOARD_EGL_CFG := vendor/qcom/system/lib/egl/egl.cfg
 
 BOARD_USES_ADRENO_200 := true
@@ -72,10 +74,6 @@ BOARD_EGL_GRALLOC_USAGE_FILTER := true
 
 # Workaround for shooter broken overlay scaling
 BOARD_OVERLAY_MINIFICATION_LIMIT := 2
-
-TARGET_USE_CAF_PARAMS := true
-CAMERA_CONVERT_COLORS := true
-COMMON_GLOBAL_CFLAGS += -DBYPASS_OFFSET
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
 
