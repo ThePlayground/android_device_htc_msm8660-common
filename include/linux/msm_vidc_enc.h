@@ -1,14 +1,3 @@
-/****************************************************************************
- ****************************************************************************
- ***
- ***   This header was automatically generated from a Linux kernel header
- ***   of the same name, to make information necessary for userspace to
- ***   call into the kernel available to libc.  It contains only constants,
- ***   structures, and macros generated from the original header, and thus,
- ***   contains no copyrightable information.
- ***
- ****************************************************************************
- ****************************************************************************/
 #ifndef _MSM_VIDC_ENC_H_
 #define _MSM_VIDC_ENC_H_
 
@@ -64,9 +53,9 @@
 #define VEN_BUFFLAG_CODECCONFIG	0x00000080
 
 /*Post processing flags bit masks*/
-#define VEN_EXTRADATA_NONE          0x001
-#define VEN_EXTRADATA_QCOMFILLER    0x002
-#define VEN_EXTRADATA_SLICEINFO     0x100
+#define VEN_EXTRADATA_NONE		0x001
+#define VEN_EXTRADATA_QCOMFILLER	0x002
+#define VEN_EXTRADATA_SLICEINFO		0x100
 
 /*ENCODER CONFIGURATION CONSTANTS*/
 
@@ -273,8 +262,6 @@ struct venc_ioctl_msg{
 #define VEN_IOCTL_GET_RECON_BUFFER_SIZE \
 	_IOW(VEN_IOCTLBASE_NENC, 22, struct venc_ioctl_msg)
 
-
-
 /*ENCODER PROPERTY CONFIGURATION & CAPABILITY IOCTLs*/
 
 /*IOCTL params:SET: InputData - venc_basecfg, OutputData - NULL
@@ -456,7 +443,6 @@ struct venc_ioctl_msg{
 
 #define VEN_IOCTL_SET_METABUFFER_MODE \
 	_IOW(VEN_IOCTLBASE_ENC, 47, struct venc_ioctl_msg)
-
 
 /*IOCTL params:SET: InputData - unsigned int, OutputData - NULL.*/
 #define VEN_IOCTL_SET_EXTRADATA \
