@@ -96,9 +96,10 @@ PRODUCT_PACKAGES += \
 # 8660 Common Firmware
 PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    device/htc/msm8660-common/prebuilt/etc/firmware/BCM4329B1_002.002.023.0589.0632.hcd:system/etc/firmware/BCM4329B1_002.002.023.0589.0632.hcd \
-    device/htc/msm8660-common/prebuilt/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
-    device/htc/msm8660-common/prebuilt/etc/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin
+    device/htc/msm8660-common/prebuilt/vendor/firmware/BCM4329B1_002.002.023.0589.0632.hcd:system/vendor/firmware/BCM4329B1_002.002.023.0589.0632.hcd \
+    device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcm4329.bin \
+    device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_p2p.bin:system/vendor/firmware/fw_bcm4329_p2p.bin \
+    device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin
 
 # media config xml file
 PRODUCT_COPY_FILES += \
