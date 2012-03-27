@@ -61,8 +61,8 @@ PRODUCT_PACKAGES += \
     libaudioutils
 
 # QCOM Camera
-PRODUCT_PACKAGES += \
-    camera.msm8660
+# PRODUCT_PACKAGES += \
+#     camera.msm8660
 
 # QCOM OMX
 PRODUCT_PACKAGES += \
