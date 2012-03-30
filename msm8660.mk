@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
 # 8660 Common Firmware
 PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/etc/firmware/vidc_1080p.fw:system/etc/firmware/vidc_1080p.fw \
-    device/htc/msm8660-common/prebuilt/vendor/firmware/BCM4329B1_002.002.023.0589.0632.hcd:system/vendor/firmware/BCM4329B1_002.002.023.0589.0632.hcd \
+    device/htc/msm8660-common/prebuilt/vendor/firmware/bcm4329.hcd:system/vendor/firmware/bcm4329.hcd \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcm4329.bin \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_p2p.bin:system/vendor/firmware/fw_bcm4329_p2p.bin \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin
