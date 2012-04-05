@@ -37,8 +37,8 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml
 
 # bootanimation
-PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+#PRODUCT_COPY_FILES += \
+#    device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
 
