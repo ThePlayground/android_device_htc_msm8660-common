@@ -40,6 +40,12 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES += \
 #    device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
+# boot sound
+PRODUCT_COPY_FILES += \
+    device/htc/msm8660-common/prebuilt/etc/init.local.rc:system/etc/init.local.rc \
+    device/htc/msm8660-common/prebuilt/media/android_audio.mp3:system/media/android_audio.mp3 \
+    device/htc/msm8660-common/prebuilt/bin/bootsound:system/bin/bootsound
+
 PRODUCT_PACKAGE_OVERLAYS += device/htc/msm8660-common/overlay
 
 # QCOM Display
