@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # bootanimation
 #PRODUCT_COPY_FILES += \
-#    device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+    device/htc/msm8660-common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
 
 # boot sound
 PRODUCT_COPY_FILES += \
