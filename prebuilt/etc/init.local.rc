@@ -1,11 +1,12 @@
-service bootsound /system/bin/bootsound
-        user media
-        group audio
-        disabled
-        oneshot
+service bootsound /system/bin/sh /system/bin/bootsound
+    class main
+    user media
+    group audio
+    disabled
+    oneshot
 
 on property:init.svc.bootanim=running   # to correct timing
-        start bootsound
+    start bootsound
 
 on property:dev.bootcomplete=1
-        stop bootsound
+    stop bootsound
