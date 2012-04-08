@@ -82,6 +82,7 @@ struct msm_rotator_platform_data {
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
  struct msm_rot_clocks *rotator_clks;
  const char *regulator_name;
+ struct msm_bus_scale_pdata *bus_scale_table;
 };
 #endif
 /* WARNING: DO NOT EDIT, AUTO-GENERATED CODE - SEE TOP FOR INSTRUCTIONS */
