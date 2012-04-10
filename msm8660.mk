@@ -81,7 +81,8 @@ PRODUCT_PACKAGES += \
      mm-vdec-omx-test \
      mm-video-driver-test \
      mm-venc-omx-test720p \
-     mm-video-encdrv-test
+     mm-video-encdrv-test \
+     libI420colorconvert
 
 # Misc
 PRODUCT_PACKAGES += \
