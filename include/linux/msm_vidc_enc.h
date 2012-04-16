@@ -44,7 +44,6 @@
 #define VEN_MSG_PAUSE	8
 #define VEN_MSG_RESUME	9
 #define VEN_MSG_STOP_READING_MSG	10
-#define VEN_MSG_EVT_HW_ERROR		11
 
 /*Buffer flags bits masks*/
 #define VEN_BUFFLAG_EOS	0x00000001
