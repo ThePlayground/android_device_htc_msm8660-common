@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit msm8660 Vendor Files
+# Inherit Qualcomm prebuilt libraries
 $(call inherit-product-if-exists, vendor/qcom/qcom-vendor-blobs.mk)
 
 # usb profiles
