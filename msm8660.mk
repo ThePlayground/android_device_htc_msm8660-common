@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit Qualcomm prebuilt libraries
-$(call inherit-product-if-exists, vendor/qcom/qcom-vendor-blobs.mk)
+# $(call inherit-product-if-exists, vendor/qcom/qcom-vendor-blobs.mk)
 
 # usb profiles
 PRODUCT_COPY_FILES += \
