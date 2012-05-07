@@ -84,6 +84,10 @@ PRODUCT_PACKAGES += \
      mm-video-encdrv-test \
      libI420colorconvert
 
+# HDMI
+PRODUCT_PACKAGES += \
+    hdmid
+
 # Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
@@ -107,6 +111,11 @@ PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcm4329.bin \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_p2p.bin:system/vendor/firmware/fw_bcm4329_p2p.bin \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin
+
+# Common Qualcomm scripts
+PRODUCT_COPY_FILES += \
+    device/htc/msm8660-common/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
+    device/htc/msm8660-common/prebuilt/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh
 
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
