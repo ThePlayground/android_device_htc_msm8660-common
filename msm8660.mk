@@ -108,10 +108,6 @@ PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_p2p.bin:system/vendor/firmware/fw_bcm4329_p2p.bin \
     device/htc/msm8660-common/prebuilt/vendor/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin
 
-# media config xml file
-PRODUCT_COPY_FILES += \
-    device/htc/msm8660-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
-
 # We have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
