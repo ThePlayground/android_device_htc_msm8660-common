@@ -39,7 +39,7 @@ TARGET_SCORPION_BIONIC_PLDSIZE := 128
 TARGET_EXTRA_CFLAGS += $(call cc-option,-march=armv7-a -mtune=cortex-a8)
 
 ARCH_ARM_HAVE_VFP := true
-USE_MALLOC_ALIGNMENT := 16
+BOARD_MALLOC_ALIGNMENT := 16
 
 # Merged Wifi Defines
 WIFI_BAND                        := 802_11_ABG
